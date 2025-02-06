@@ -3,7 +3,7 @@ Un semplice contatore scritto in JavaScript
 
 ## Screenshots
 
-![](...)
+![](https://github.com/jacopo-db/counter/blob/main/img/Schermata%202025-02-06%20alle%2015.34.33.png)
 
 
 ## Linguaggio
@@ -13,12 +13,10 @@ Un semplice contatore scritto in JavaScript
  - JavaScript
 
 
-
 ##  Descrizione
 
-Ho realizzato questo semplice contatore come progetto del corso JavaScript Basic per Start2impact.
-
-
+Ho realizzato questo semplice contatore come progetto del corso JavaScript Basic per Start2impact. Il progetto era rivolto a sviluppare un'applicazione JavaScript che permetta all'utente di aumentare e decrementare il valore del counter.
+L'utente, appena entrato nella pagina, visualizzerà 0 come valore del counter e avrà a disposizione due pulsanti +/- per cambiare il valore del counter.
 
 
 ## Requisiti tecnici
