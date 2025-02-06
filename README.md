@@ -1,2 +1,2 @@
 # counter
-Un semplice contatore scritto in Javas
+Un semplice contatore scritto in JavaScript
