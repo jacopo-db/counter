@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, #0C4765, #F37420);
+}
+.box .counter {
+  font-size: 80px;
+}
+.box .buttonsBox {
+  display: flex;
+  gap: 30px;
+}
+.box .buttonsBox button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #BDC3D1;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
