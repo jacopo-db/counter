@@ -15,7 +15,7 @@ Un semplice contatore scritto in JavaScript
 
 ##  Descrizione
 
-Ho realizzato questo semplice contatore come progetto del corso JavaScript Basic per Start2impact. Il progetto era rivolto a sviluppare un'applicazione JavaScript che permetta all'utente di aumentare e decrementare il valore del counter.
+Ho realizzato questo semplice contatore come progetto del corso JavaScript Basic per Start2impact. Il progetto consiste nello sviluppare un'applicazione JavaScript che permetta all'utente di aumentare e decrementare il valore del counter.
 L'utente, appena entrato nella pagina, visualizzerà 0 come valore del counter e avrà a disposizione due pulsanti +/- per cambiare il valore del counter.
 
 
@@ -25,3 +25,5 @@ L'applicazione deve essere sviluppata con JavaScript. L'uso di jQuery non è con
 
 
 ## 🔗 Link website
+
+https://monumental-douhua-25ebd5.netlify.app/
