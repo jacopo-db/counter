@@ -1,19 +1,16 @@
 // creazione elementi html
 const body = document.querySelector("body");
 const box = document.createElement("div");
-const counter = document.createElement("div");
+
+const container = document.createElement("div"); // modifica dopo correzioni coach
+let counter = 0;
+
 const buttonsBox = document.createElement("div");
 
 // aggiunta classi
 box.classList.add("box");
-counter.classList.add("counter");
+container.classList.add("container");
 buttonsBox.classList.add("buttonsBox");
-
-/*
-vedi nota riga 11 del file index.html
-const counter = document.querySelector(".counter");
-const buttonsBox = document.querySelector(".buttonsBox");
-*/
 
 // creazione dei bottoni
 const decrement = document.createElement("button");
@@ -23,17 +20,17 @@ const increment10 = document.createElement("button");
 const decrement10 = document.createElement("button");
 
 // assegnazione valori
-counter.innerHTML = 0;
+container.textContent = counter;
 
-decrement10.innerHTML = "-10";
-decrement.innerHTML = "-1"
-reset.innerHTML = "Reset";
-increment.innerHTML = "+1";
-increment10.innerHTML = "+10";
+decrement10.textContent = "-10";
+decrement.textContent = "-1"
+reset.textContent = "Reset";
+increment.textContent = "+1";
+increment10.textContent = "+10";
 
 // aggiunta all'html
 body.appendChild(box);
-box.appendChild(counter);
+box.appendChild(container);
 box.appendChild(buttonsBox);
 
 buttonsBox.appendChild(decrement10);
@@ -42,24 +39,6 @@ buttonsBox.appendChild(reset);
 buttonsBox.appendChild(increment);
 buttonsBox.appendChild(increment10);
 
-/* metodo più veloce (per me), ma meno riutilizzabile:
-
-decrement.addEventListener("click", () => {
-    counter.innerHTML--;
-})
-reset.addEventListener("click", () => {
-    counter.innerHTML = 0;
-})
-increment.addEventListener("click", () => {
-    counter.innerHTML++;
-})
-increment10.addEventListener("click", () => {
-    counter.innerHTML = Number(counter.innerHTML) + 10;
-})
-decrement10.addEventListener("click", () => {
-    counter.innerHTML -= 10;
-})
-*/
 
 decrement.setAttribute("data-action", "decrement");
 reset.setAttribute("data-action", "reset");
@@ -75,26 +54,24 @@ buttonsBox.addEventListener("click", (event) => {
     if(!action) return;
     switch (action) {
         case "decrement":
-            counter.innerHTML--; 
+            counter--; 
             break;
         case "reset":
-            counter.innerHTML = 0;
+            counter = 0;
             break;
         case "increment":
-            counter.innerHTML++;
+            counter++;
             break;
         case "increment10":
-            counter.innerHTML = Number(counter.innerHTML) + 10; 
+            counter += 10; 
             break;
         case "decrement10":
-            counter.innerHTML -= 10;
+            counter -= 10;
             break;
         default:
             break;
     }
+    container.textContent = counter;
 })
 
-
-
-
-
+// Ho apportato le modifiche richieste, spero che sia tutto ok :)

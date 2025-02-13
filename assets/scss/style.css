@@ -12,7 +12,7 @@
   height: 100vh;
   background: linear-gradient(to right, #0C4765, #F37420);
 }
-.box .counter {
+.box .container {
   font-size: 80px;
 }
 .box .buttonsBox {
